@@ -180,84 +180,9 @@ describe('CONTENT MANAGER | EditView | Header', () => {
         background: #4945ff;
       }
 
-      .c9 {
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-flex-direction: row;
-        -ms-flex-direction: row;
-        flex-direction: row;
-        -webkit-align-items: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-      }
-
-      .c10 > * {
-        margin-left: 0;
-        margin-right: 0;
-      }
-
-      .c10 > * + * {
-        margin-left: 8px;
-      }
-
-      .c0 {
-        background: #f6f6f9;
-        padding-top: 24px;
-        padding-right: 56px;
-        padding-bottom: 40px;
-        padding-left: 56px;
-      }
-
-      .c1 {
-        padding-bottom: 8px;
-      }
-
-      .c6 {
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-flex-direction: row;
-        -ms-flex-direction: row;
-        flex-direction: row;
-        -webkit-box-pack: justify;
-        -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-        justify-content: space-between;
-        -webkit-align-items: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-      }
-
-      .c7 {
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-flex-direction: row;
-        -ms-flex-direction: row;
-        flex-direction: row;
-        -webkit-align-items: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-      }
-
-      .c8 {
-        color: #32324d;
-        font-weight: 600;
-        font-size: 2rem;
-        line-height: 1.25;
-      }
-
-      .c15 {
-        color: #666687;
-        font-size: 1rem;
-        line-height: 1.5;
+      .c12 svg > g,
+      .c12 svg path {
+        fill: #ffffff;
       }
 
       .c5 {
@@ -383,6 +308,7 @@ describe('CONTENT MANAGER | EditView | Header', () => {
             </div>
             <div
               class="c9 c10"
+              spacing="2"
             >
               <button
                 aria-disabled="true"
