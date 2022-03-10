@@ -39,6 +39,7 @@ const GenericInput = ({
   step,
   type,
   value,
+  isNullable,
   ...rest
 }) => {
   const { formatMessage } = useIntl();
@@ -91,8 +92,6 @@ const GenericInput = ({
 
   switch (type) {
     case 'bool': {
-      // in case the default value is null, the default attribute.default doesn't exist
-      const isNullable = rest.attribute?.default === undefined;
       const clearProps = {
         clearLabel:
           isNullable &&
@@ -409,6 +408,7 @@ GenericInput.defaultProps = {
   description: null,
   disabled: false,
   error: '',
+  isNullable: undefined,
   labelAction: undefined,
   placeholder: null,
   required: false,
@@ -432,6 +432,7 @@ GenericInput.propTypes = {
     defaultMessage: PropTypes.string.isRequired,
     values: PropTypes.object,
   }).isRequired,
+  isNullable: PropTypes.bool,
   labelAction: PropTypes.element,
   name: PropTypes.string.isRequired,
   onChange: PropTypes.func.isRequired,
